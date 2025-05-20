@@ -1,0 +1,22 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    >
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_forProfileActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_border_icon"
+            android:text="View Profile Activiyt"
+            android:textColor="@color/white"
+            android:padding="20.dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

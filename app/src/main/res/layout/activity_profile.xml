@@ -1,0 +1,584 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    >
+    <!--    topBar-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1E1E1E"
+            android:orientation="vertical"
+            android:padding="20.dp">
+
+
+            <!--        TopBar-->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="30.dp"
+                >
+
+                <ImageButton
+                    android:id="@+id/uI_BackButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/outline_west_24"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.dp"
+                    android:layout_toRightOf="@id/uI_BackButton"
+                    android:text="Profile"
+                    android:textColor="@color/white"
+                    android:textSize="20.dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/uI_BackButton"
+                    app:layout_constraintTop_toTopOf="parent"
+
+                    />
+                <!--button for support-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_border_icon"
+                    android:orientation="horizontal"
+                    android:paddingStart="20.dp"
+                    android:paddingTop="10.dp"
+                    android:paddingEnd="20.dp"
+                    android:paddingBottom="10.dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+
+                    >
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/sms_24px" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.dp"
+                        android:textColor="@color/white"
+                        android:text="support" />
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <!-- Header -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="20dp"
+                android:layout_marginTop="30.dp"
+
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/userProfilePhotoCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20.dp"
+                    app:cardCornerRadius="50.dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    >
+                    <ImageView
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/profile_pic" />
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10.dp"
+                    android:orientation="vertical"
+                    android:layout_toEndOf="@id/userProfilePhotoCard"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="andaz Kumar"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="member since Dec, 2020"
+                        android:textColor="#AAAAAA"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    app:cardCornerRadius="100.dp"
+                    android:backgroundTint="#1E1E1E"
+                    >
+                    <ImageButton
+                        android:layout_width="50.dp"
+                        android:layout_height="50.dp"
+                        android:src="@drawable/edit_24px"
+                        android:background="@drawable/button_border_icon"
+                        />
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+            <!-- CRED Garage Card -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20.dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/_1dp_borders"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="16dp"
+
+                >
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/baseline_directions_car_24" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="0dp"
+                        android:gravity="bottom"
+                        android:text="get to know your vehicles, inside out"
+                        android:textColor="#FFFFFF" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0.dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CRED garage"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/arrow_forward_24px" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Stats Row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Credit Score -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingVertical="12dp">
+
+                    <ImageButton
+                        android:id="@+id/credit_score_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/credit_icon" />
+
+                    <TextView
+                        android:id="@+id/tvCreditText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/credit_score_icon"
+                        android:layout_alignBottom="@id/credit_score_icon"
+                        android:layout_marginLeft="10.dp"
+                        android:layout_toEndOf="@id/credit_score_icon"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="credit score"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/credit_score_icon"
+                        android:layout_alignBottom="@id/credit_score_icon"
+                        android:layout_toEndOf="@id/tvCreditText"
+                        android:gravity="center"
+                        android:text=" •REFRESH AVAILABLE"
+                        android:textColor="#00FF00"
+                        android:textSize="14sp"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/credit_score_icon"
+                        android:layout_alignBottom="@id/credit_score_icon"
+                        android:layout_toLeftOf="@id/moreIconCreditScore"
+                        android:gravity="center"
+                        android:text="757"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp"
+
+                        />
+
+                    <ImageView
+                        android:id="@+id/moreIconCreditScore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/credit_score_icon"
+                        android:layout_alignBottom="@id/credit_score_icon"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginLeft="20.dp"
+                        android:src="@drawable/arrow_forward_24px"
+
+                        />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="10.dp"
+                    android:layout_marginEnd="10.dp"
+                    android:background="@color/gray" />
+                <!-- Cashback -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingVertical="12dp">
+
+                    <ImageView
+                        android:id="@+id/icon_currency_rupee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:src="@drawable/currency_rupee_24px"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10.dp"
+                        android:layout_toEndOf="@id/icon_currency_rupee"
+                        android:layout_weight="1"
+                        android:text="lifetime cashback"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@id/cashbackMoreButton"
+                        android:text="₹3"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/cashbackMoreButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginLeft="20.dp"
+                        android:src="@drawable/arrow_forward_24px" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="10.dp"
+                    android:layout_marginEnd="10.dp"
+                    android:background="@color/gray" />
+                <!-- Bank Balance -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingVertical="12dp"
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/icon_upi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/upi_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10.dp"
+                        android:layout_toEndOf="@id/icon_upi"
+                        android:layout_weight="1"
+                        android:text="bank balance"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@id/balance_moreIcon"
+                        android:text="check"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/balance_moreIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginLeft="20.dp"
+                        android:src="@drawable/arrow_forward_24px" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20.dp">
+
+            <!-- Rewards -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="YOUR REWARDS and BENEFITS"
+                android:textColor="#AAAAAA"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="12dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tag_cashbackBalance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:text="cashback balance"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/balance_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tag_cashbackBalance"
+                        android:paddingBottom="12dp"
+                        android:text="₹0"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/tag_cashbackBalance"
+                        android:layout_alignBottom="@id/balance_tv"
+                        android:layout_alignParentEnd="true"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/chevron_right_24px"
+
+
+                        />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="10.dp"
+                    android:layout_marginEnd="10.dp"
+                    android:background="@color/gray" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/tag_coins"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="10.dp"
+                        android:text="coins"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/_coins_total_field"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tag_coins"
+                        android:paddingBottom="12dp"
+                        android:text="26,46,583"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignTop="@id/tag_coins"
+                        android:layout_alignBottom="@id/_coins_total_field"
+                        android:layout_alignParentEnd="true"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/chevron_right_24px" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="10.dp"
+                    android:layout_marginEnd="10.dp"
+                    android:background="@color/gray" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/_tag_winnig"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="10.dp"
+                        android:text="win upto Rs 1000"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/winnig_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/_tag_winnig"
+                        android:paddingBottom="20dp"
+                        android:text="refer and earn"
+                        android:textColor="#AAAAAA"
+                        android:textSize="12sp" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignTop="@id/_tag_winnig"
+                        android:layout_alignBottom="@id/winnig_count"
+                        android:layout_alignParentEnd="true"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/chevron_right_24px" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- Transactions & Support -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tag_TransactionAndSupport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="16dp"
+                    android:text="TRANSACTIONS and SUPPORT"
+                    android:textColor="#AAAAAA"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_transactions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="12dp"
+                    android:text="all transactions"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:layout_below="@id/tag_TransactionAndSupport"
+                    />
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignTop="@id/tag_TransactionAndSupport"
+                    android:layout_alignBottom="@id/text_transactions"
+                    android:layout_alignParentEnd="true"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/chevron_right_24px" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
